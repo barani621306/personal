@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Barani Kumar</title>
+    <style>
+        /* Apple-inspired Design System */
+        :root {
+            --bg-color: #f5f5f7;
+            --card-bg: rgba(255, 255, 255, 0.75);
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --accent: #0071e3;
+            --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            font-family: var(--font-family);
+            color: var(--text-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 90%;
+            margin: 40px auto;
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            padding: 48px 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05), inset 0 0 0 1px rgba(255,255,255,0.4);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 0 0 8px 0;
+        }
+
+        .headline {
+            font-size: 19px;
+            color: var(--text-secondary);
+            margin: 0 0 6px 0;
+            font-weight: 400;
+        }
+
+        .location {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .skills-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill-badge {
+            background: #e8e8ed;
+            color: var(--text-primary);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .edu-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .edu-title {
+            font-weight: 600;
+            font-size: 17px;
+            margin: 0 0 4px 0;
+        }
+
+        .edu-detail {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .contact-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Subtle citation styling to maintain aesthetic */
+        .cite {
+            font-size: 10px;
+            color: #c1c1c4;
+            vertical-align: super;
+            margin-left: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Barani Kumar<span class="cite">[cite: 1]</span></h1>
+            <p class="headline">Student at SKCT<span class="cite">[cite: 1]</span></p>
+            <p class="location">Coimbatore, Tamil Nadu, India<span class="cite">[cite: 1]</span></p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:barani621306@gmail.com">barani621306@gmail.com<span class="cite">[cite: 1]</span></a>
+                <a href="https://www.linkedin.com/in/barani-kumar-a211a51bb" target="_blank">LinkedIn Profile<span class="cite">[cite: 1]</span></a>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Top Skills</h2>
+            <div class="skills-container">
+                <div class="skill-badge">Management<span class="cite">[cite: 1]</span></div>
+                <div class="skill-badge">Sales<span class="cite">[cite: 1]</span></div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section" style="margin-bottom: 0;">
+            <h2>Education</h2>
+            <div class="edu-card">
+                <p class="edu-title">Anna University<span class="cite">[cite: 1]</span></p>
+                <p class="edu-detail">Bachelor of Engineering - BE (2019-2022)<span class="cite">[cite: 1]</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
